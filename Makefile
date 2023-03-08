@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall
 
 
-all: hello helloArgs redirect string tokenize options ages loops arrays
+all: hello helloArgs redirect string tokenize options ages loops arrays multiply
 
 %: %.c
 	$(CC) $(CFLAGS) -o $@ $^
@@ -16,3 +16,4 @@ clean:
 	rm -f ages
 	rm -f loops
 	rm -f arrays
+	rm -f multiply
